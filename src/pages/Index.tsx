@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center px-4">
         <div className="text-center max-w-4xl fade-in">
@@ -112,7 +112,7 @@ const Index = () => {
                 <p>Просим подтвердить ваше присутствие до 15 сентября</p>
                 <Button 
                   variant="outline" 
-                  className="border-primary text-primary hover:bg-primary hover:text-white transition-colors px-8 py-3"
+                  className="border-primary text-primary hover:bg-primary hover:text-background transition-colors px-8 py-3"
                 >
                   Подтвердить присутствие
                 </Button>
