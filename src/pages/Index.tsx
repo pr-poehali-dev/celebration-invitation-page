@@ -1,174 +1,128 @@
 import React from 'react';
-import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
-import Icon from '@/components/ui/icon';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section 
-        className="relative min-h-screen flex items-center justify-center bg-cover bg-center"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/9e25460e-309f-4f2d-9d39-af21ca1d53a2.jpg')`
-        }}
-      >
-        <div className="text-center text-white px-4 max-w-4xl fade-in">
-          <div className="elegant-border bg-black/20 backdrop-blur-sm p-12 rounded-lg">
-            <h1 className="elegant-title text-6xl md:text-8xl mb-8 text-gold">
-              Приглашение
-            </h1>
-            <div className="w-24 h-1 gold-gradient mx-auto mb-8"></div>
-            <p className="elegant-text text-xl md:text-2xl mb-8 leading-relaxed max-w-3xl mx-auto">
-              В этот трогательный день, мы хотим оказаться в окружении самых дорогих нам людей! 
-              С огромной радостью приглашаем разделить с нами этот волшебный момент!
-            </p>
-            <div className="flex items-center justify-center gap-4 mb-8">
-              <Icon name="Heart" className="text-gold" size={24} />
-              <span className="elegant-text text-lg">21 сентября 2025</span>
-              <Icon name="Heart" className="text-gold" size={24} />
-            </div>
-            <Button 
-              className="gold-gradient text-black-elegant elegant-text font-semibold px-8 py-4 text-lg hover:opacity-90 transition-opacity"
-            >
-              Узнать подробности
-            </Button>
+      <section className="min-h-screen flex items-center justify-center px-4">
+        <div className="text-center max-w-4xl fade-in">
+          <h1 className="minimal-title text-8xl md:text-9xl mb-12 text-primary">
+            Приглашение
+          </h1>
+          <div className="minimal-line mx-auto mb-12"></div>
+          <p className="minimal-text text-2xl md:text-3xl mb-16 leading-relaxed max-w-3xl mx-auto text-secondary">
+            В этот трогательный день, мы хотим оказаться в окружении самых дорогих нам людей! 
+            С огромной радостью приглашаем разделить с нами этот волшебный момент!
+          </p>
+          <div className="minimal-text text-xl text-primary mb-16">
+            21 сентября 2025 · 19:00
           </div>
         </div>
       </section>
 
       {/* Event Details */}
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="elegant-title text-5xl text-center mb-16 text-black-elegant">
-            Детали торжества
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-12">
-            <Card className="elegant-border bg-white/80 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <div className="flex items-center gap-4 mb-6">
-                  <Icon name="Calendar" className="text-gold" size={32} />
-                  <h3 className="elegant-title text-2xl text-black-elegant">Дата и время</h3>
-                </div>
-                <div className="elegant-text text-lg space-y-2">
-                  <p className="font-semibold">21 сентября 2025 года</p>
-                  <p>19:00 - начало церемонии</p>
-                  <p className="text-muted-foreground">Просим прибыть за 15 минут до начала</p>
-                </div>
-              </CardContent>
-            </Card>
+      <section className="py-32 px-4 border-t border-border">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-24">
+            <div className="fade-in">
+              <h2 className="minimal-title text-4xl mb-8 text-primary">Дата и время</h2>
+              <div className="minimal-text text-xl space-y-4 text-secondary">
+                <p>21 сентября 2025 года</p>
+                <p>19:00 - начало церемонии</p>
+                <p className="text-base">Просим прибыть за 15 минут до начала</p>
+              </div>
+            </div>
 
-            <Card className="elegant-border bg-white/80 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <div className="flex items-center gap-4 mb-6">
-                  <Icon name="MapPin" className="text-gold" size={32} />
-                  <h3 className="elegant-title text-2xl text-black-elegant">Место проведения</h3>
-                </div>
-                <div className="elegant-text text-lg space-y-2">
-                  <p className="font-semibold">Уфа, Республика Башкортостан</p>
-                  <p>ул. Златоустовская, дом 20, корпус 2</p>
-                  <Button variant="outline" className="mt-4 text-gold border-gold hover:bg-gold hover:text-white">
-                    <Icon name="Navigation" className="mr-2" size={16} />
-                    Показать на карте
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            <div className="fade-in">
+              <h2 className="minimal-title text-4xl mb-8 text-primary">Место проведения</h2>
+              <div className="minimal-text text-xl space-y-4 text-secondary">
+                <p>Уфа, Республика Башкортостан</p>
+                <p>ул. Златоустовская, дом 20, корпус 2</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Dress Code */}
-      <section className="py-20 px-4 bg-muted/30">
+      <section className="py-32 px-4 border-t border-border">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="elegant-title text-5xl mb-8 text-black-elegant">
+          <h2 className="minimal-title text-6xl mb-12 text-primary">
             Дресс-код
           </h2>
-          <div className="elegant-border bg-white p-12 rounded-lg">
-            <Icon name="Shirt" className="text-gold mx-auto mb-6" size={48} />
-            <h3 className="elegant-title text-3xl mb-4 text-black-elegant">Black Tie</h3>
-            <p className="elegant-text text-xl mb-6">Торжественный стиль</p>
-            <Separator className="my-6 bg-gold" />
-            <div className="elegant-text text-lg text-muted-foreground">
-              <p>Мужчины: смокинг или темный костюм, галстук-бабочка</p>
-              <p className="mt-2">Женщины: вечернее платье или коктейльное платье</p>
+          <div className="minimal-line mx-auto mb-12"></div>
+          <h3 className="minimal-title text-4xl mb-8 text-primary">Black Tie</h3>
+          <p className="minimal-text text-2xl mb-12 text-secondary">Торжественный стиль</p>
+          
+          <div className="grid md:grid-cols-2 gap-16 max-w-3xl mx-auto">
+            <div className="minimal-text text-lg text-secondary">
+              <p className="font-normal">Мужчины:</p>
+              <p>смокинг или темный костюм</p>
+              <p>галстук-бабочка</p>
+            </div>
+            <div className="minimal-text text-lg text-secondary">
+              <p className="font-normal">Женщины:</p>
+              <p>вечернее платье или</p>
+              <p>коктейльное платье</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Gifts */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="elegant-title text-5xl text-center mb-16 text-black-elegant">
+      <section className="py-32 px-4 border-t border-border">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="minimal-title text-6xl mb-12 text-primary">
             О подарках
           </h2>
+          <div className="minimal-line mx-auto mb-12"></div>
           
-          <Card className="elegant-border bg-white">
-            <CardContent className="p-12 text-center">
-              <Icon name="Gift" className="text-gold mx-auto mb-6" size={48} />
-              <div className="elegant-text text-lg space-y-4 max-w-3xl mx-auto">
-                <p>
-                  Мы не хотим обременять себя поиском подарка, лучшим выбором будет 
-                  вклад на мечту в бюджет нашей молодой семьи.
-                </p>
-                <p className="text-gold font-semibold">
-                  И руки будут всегда готовы для объятий! 🤗
-                </p>
-              </div>
-              <Separator className="my-8 bg-gold" />
-              <Button className="gold-gradient text-black-elegant font-semibold px-8 py-3">
-                <Icon name="CreditCard" className="mr-2" size={16} />
-                Реквизиты для перевода
-              </Button>
-            </CardContent>
-          </Card>
+          <div className="minimal-text text-xl space-y-8 max-w-3xl mx-auto text-secondary leading-relaxed">
+            <p>
+              Мы не хотим обременять себя поиском подарка, лучшим выбором будет 
+              вклад на мечту в бюджет нашей молодой семьи.
+            </p>
+            <p className="text-primary">
+              И руки будут всегда готовы для объятий!
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Contact Information */}
-      <section className="py-20 px-4 bg-black-elegant text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="elegant-title text-5xl mb-16 text-gold">
+      <section className="py-32 px-4 border-t border-border">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="minimal-title text-6xl text-center mb-20 text-primary">
             Контакты
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-white/10 border-gold/30">
-              <CardContent className="p-8">
-                <h3 className="elegant-title text-2xl mb-4 text-gold">Организационные вопросы</h3>
-                <div className="elegant-text space-y-3">
-                  <div className="flex items-center justify-center gap-3">
-                    <Icon name="Phone" className="text-gold" size={20} />
-                    <span>+7 (000) 000-00-00</span>
-                  </div>
-                  <div className="flex items-center justify-center gap-3">
-                    <Icon name="MessageCircle" className="text-gold" size={20} />
-                    <span>Telegram: @username</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+          <div className="grid md:grid-cols-2 gap-24">
+            <div className="text-center">
+              <h3 className="minimal-title text-3xl mb-8 text-primary">Организационные вопросы</h3>
+              <div className="minimal-text text-lg space-y-4 text-secondary">
+                <p>+7 (000) 000-00-00</p>
+                <p>Telegram: @username</p>
+              </div>
+            </div>
 
-            <Card className="bg-white/10 border-gold/30">
-              <CardContent className="p-8">
-                <h3 className="elegant-title text-2xl mb-4 text-gold">Подтверждение присутствия</h3>
-                <div className="elegant-text space-y-3">
-                  <p className="mb-4">Просим подтвердить ваше присутствие до 15 сентября</p>
-                  <Button className="gold-gradient text-black-elegant font-semibold w-full">
-                    <Icon name="Check" className="mr-2" size={16} />
-                    Подтвердить присутствие
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            <div className="text-center">
+              <h3 className="minimal-title text-3xl mb-8 text-primary">Подтверждение присутствия</h3>
+              <div className="minimal-text text-lg space-y-6 text-secondary">
+                <p>Просим подтвердить ваше присутствие до 15 сентября</p>
+                <Button 
+                  variant="outline" 
+                  className="border-primary text-primary hover:bg-primary hover:text-white transition-colors px-8 py-3"
+                >
+                  Подтвердить присутствие
+                </Button>
+              </div>
+            </div>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-gold/30">
-            <p className="elegant-text text-lg text-gold-light">
-              С нетерпением ждем встречи с вами в этот особенный день! ✨
+          <div className="mt-24 pt-16 border-t border-border text-center">
+            <p className="minimal-text text-xl text-secondary">
+              С нетерпением ждем встречи с вами в этот особенный день!
             </p>
           </div>
         </div>

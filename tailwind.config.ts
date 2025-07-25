@@ -62,10 +62,9 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				gold: 'hsl(var(--gold))',
-				'gold-light': 'hsl(var(--gold-light))',
-				'black-elegant': 'hsl(var(--black-elegant))',
-				cream: 'hsl(var(--cream))'
+				'text-primary': 'hsl(var(--text-primary))',
+				'text-secondary': 'hsl(var(--text-secondary))',
+				'line-accent': 'hsl(var(--line-accent))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
